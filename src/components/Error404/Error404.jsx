@@ -5,7 +5,7 @@ function Error404() {
   return (
     <div className="w-full h-screen">
       <Player
-        className="player pt-20 h-auto w-1/3"
+        className="player pt-20 h-auto w11/12 sm:w-1/3"
         src={NotFound}
         autoplay
         loop

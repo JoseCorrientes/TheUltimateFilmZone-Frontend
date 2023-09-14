@@ -18,7 +18,8 @@ export default {
             ...theme('spacing'),
             '1/2': '50%',
             '1/7': '14.2825%',
-            '5/7': '71.435%'
+            '5/7': '71.435%',
+            '1/10': '10%',
         }),
         fontFamily: {
             'header': ['Roboto', 'sans-serif'],

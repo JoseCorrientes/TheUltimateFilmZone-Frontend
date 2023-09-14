@@ -37,13 +37,15 @@ function SearchList() {
     }
   };
 
+
+
   return (
-    <div className=" w-full min-h-screen h-auto m-auto">
+    <div className="w-full min-h-screen h-auto m-auto">
       <div>
         {loadingState === true && (
           <Player
             src={movieTheatre}
-            className="player w-1/4 pt-20"
+            className="player w-1/2 pt-20"
             autoplay
             loop
           />
@@ -65,7 +67,7 @@ function SearchList() {
               <div className="flex flex-row w-4/6 font-header font-medium text-3xl text-black mt-4 mx-auto">
                 <Player
                   src={noItemFound}
-                  className="player w-1/3 pt-20"
+                  className="player w-11/12 sm:w-1/2 pt-20"
                   autoplay
                   loop
                   speed={1}
@@ -79,7 +81,7 @@ function SearchList() {
           searchString != "" &&
           searchResult.length > 0 && (
             <div>
-              <h1 className="font-header text-center font-medium text-2xl text-black mt-4 ">
+              <h1 className="font-header text-center font-medium text-2xl text-black mt-2 sm:mt-4">
                 {titulo1}
                 <span className="ml-6 font-light text-gray-500 ">
                   {titulo2}
@@ -88,15 +90,19 @@ function SearchList() {
                 </span>
               </h1>
 
-              <div className="flex flex-row w-4/6  font-header font-medium text-3xl text-black mt-4 mx-auto bg-gray-200">
-                <h1 className="flex flex-row w-1/2 text-left pl-5 items-center">
+
+
+
+
+              <div className="flex flex-col sm:flex-row sm:w-4/6  font-header font-medium text-2xl text-black mt-4 bg-gray-200 mx-1 sm:mx-auto">
+                <h1 className="flex flex-row w-full sm:w-1/2 text-left sm:pl-5 items-center">
                   Titles
                   <span className="inline w-auto px-2 font-medium text-sm ml-6 text-gray-400 justify-center ">
                     ( {searchTotal_results} Results )
                   </span>
                 </h1>
 
-                <div className="flex flex-row w-1/2 text-right h-auto justify-end items-center ">
+                <div className="flex flex-row w-full sm:w-1/2 text-right h-auto justify-end items-center ">
                   <p className="font-header font-medium text-base text-black bg-gray-100 ">
                     PAGE:{" "}
                   </p>
@@ -152,7 +158,17 @@ function SearchList() {
                   <SearchCard key={item.id} item={item} />
                 ))}
 
-              <div className="flex flex-row w-4/6 font-header font-medium text-3xl text-black mt-4 mb-5 mx-auto bg-gray-200">
+
+
+
+
+
+
+
+
+
+
+              <div className="flex flex-row w-auto sm:w-4/6 font-header font-medium text-3xl text-black mt-4 mb-5 mx-1 sm:mx-auto bg-gray-200">
                 <div className="w-1/2 text-left pl-5"></div>
                 <div className="flex flex-row w-1/2 text-right h-full justify-end items-center ">
                   <p className="font-header font-medium text-base text-black bg-gray-100">

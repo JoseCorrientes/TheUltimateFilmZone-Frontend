@@ -116,7 +116,6 @@ export function getMovieCredits(movieId) {
     axios
       .request(options)
       .then((resolve) => {
-        console.log(resolve);
         return dispatch({
           type: GET_MOVIECREDITS,
           payload: resolve.data.data,

@@ -28,8 +28,8 @@ function ModalEmail({ setModalOn, actualMovie, urlImage }) {
   };
 
   return (
-    <div className="flex flex-row w-full h-screen bg-opacity-50 fixed top-0 left-0  bg-black justify-center items-center">
-      <div className="flex flex-row flex-wrap rounded-2xl w-1/3 h-auto bg-white bg-opacity-60 shadow-xl shadow-black">
+    <div className="flex flex-row w-full h-screen bg-opacity-50 fixed top-0 left-0  bg-black justify-center items-center ">
+      <div className="flex flex-row flex-wrap rounded-2xl w-auto mx-1 sm:mx-0 sm:w-1/3 h-auto bg-white bg-opacity-60 shadow-xl shadow-black ">
         <h1 className="w-full mt-10 text-center font-Roboto text-black text-xl">
           {" "}
           Destination Email
