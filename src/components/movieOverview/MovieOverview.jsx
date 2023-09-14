@@ -141,14 +141,14 @@ function MovieOverview() {
   };
 
   return (
-    <div className="w-full h-auto m-auto">
+    <div className="w-full h-auto ">
       {/* <div className=" w-full min-h-screen h-auto m-auto"> */}
-      <div className="rounded-xl flex flex-row w-4/6 bg-white mt-5 mb-5 mx-auto shadow-black shadow-lg ">
-        {/* {videoId} */}
-        <div className="ml-2 w-2/6 h-auto">
+      <div className="rounded-xl flex flex-row w-auto sm:w-4/6 bg-white mt-5 mb-5 mx-1 sm:mx-auto shadow-black shadow-lg">
+       
+        <div className="ml-1 sm:ml-2 w-2/6 h-auto">
           {urlImage != null && (
             <img
-              className="w-full h-auto  bg-orange-300  border-2 border-black my-5"
+              className="w-full h-auto  border-2 border-black my-5"
               src={urlImage}
             ></img>
           )}
@@ -172,13 +172,14 @@ function MovieOverview() {
             )}
             <button className="w-full h-10 mb-2 border-2 shadow-lg shadow-gray-500  bg-white hover:bg-gray-200 rounded-sm">
               <ImShare2
-                className="w-full h-10 h-10 text-white  border-gray-400 shadow-lg shadow-gray-500  bg-gray-300 hover:bg-gray-200 hover:text-gray-400 py-1"
+                className="w-full h-10 text-white  border-gray-400 shadow-lg shadow-gray-500  bg-gray-300 hover:bg-gray-200 hover:text-gray-400 py-1"
                 onClick={() => setModalOn(true)}
               />
             </button>
           </div>
         </div>
-        <div className="w-4/6 bg-white mx-4">
+
+        <div className="w-4/6 bg-white mx-4 ">
           <h1 className="w-full bg-white font-header font-medium text-lg text-black mt-5">
             {actualMovie[0].original_title}
           </h1>
@@ -187,7 +188,10 @@ function MovieOverview() {
               actualMovie[0] !== "" &&
               actualMovie[0].release_date.slice(0, 4)}
           </h2>
-          <h2 className="flex flex-row justify-left mt-4 mb-4">
+
+
+
+          <h2 className="flex flex-row flex-wrap justify-left mt-4 mb-4">
             {categoriesName != [] &&
               categoriesName.map((x) => (
                 <span
@@ -231,11 +235,16 @@ function MovieOverview() {
             <span>{processedCastArray}</span>
           </div>
 
+
+
+
+
+
           <div className="mt-10 mb-10 w-full flex flex-row flex-wrap">
             {trailerArray.map((item) => (
               <div
                 key={item}
-                className="w-1/3 h-auto border border-gray-400 px-1 py-1 shadow-lg shadow-gray-400"
+                className="w-auto sm:w-1/3 h-auto border border-gray-400 px-1 py-1 shadow-lg shadow-gray-400"
               >
                 <ReactPlayer
                   wrapper="div"
