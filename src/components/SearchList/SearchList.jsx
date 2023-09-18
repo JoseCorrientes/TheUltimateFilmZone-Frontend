@@ -37,8 +37,6 @@ function SearchList() {
     }
   };
 
-
-
   return (
     <div className="w-full min-h-screen h-auto m-auto">
       <div>
@@ -89,10 +87,6 @@ function SearchList() {
                   {titulo3}
                 </span>
               </h1>
-
-
-
-
 
               <div className="flex flex-col sm:flex-row sm:w-4/6  font-header font-medium text-2xl text-black mt-4 bg-gray-200 mx-1 sm:mx-auto">
                 <h1 className="flex flex-row w-full sm:w-1/2 text-left sm:pl-5 items-center">
@@ -158,16 +152,6 @@ function SearchList() {
                   <SearchCard key={item.id} item={item} />
                 ))}
 
-
-
-
-
-
-
-
-
-
-
               <div className="flex flex-row w-auto sm:w-4/6 font-header font-medium text-3xl text-black mt-4 mb-5 mx-1 sm:mx-auto bg-gray-200">
                 <div className="w-1/2 text-left pl-5"></div>
                 <div className="flex flex-row w-1/2 text-right h-full justify-end items-center ">
@@ -228,4 +212,3 @@ function SearchList() {
 }
 
 export default SearchList;
-

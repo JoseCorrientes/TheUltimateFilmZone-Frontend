@@ -40,38 +40,3 @@ function App() {
 }
 
 export default App;
-
-//viernes11
-// import './App.css'
-// import Header from './components/Header/Header'
-// import Footer from './components/Footer/Footer'
-// import MainWindow from './components/MainWindow/MainWindow'
-// import { BrowserRouter, Route, Routes } from 'react-router-dom'
-// import Favorites from './components/Favorites/Favorites'
-// import LandingPage from './components/LandingPage/LandingPage'
-
-// function App() {
-
-//   return (
-//     <BrowserRouter>
-//     <div
-
-//         className='box-border w-full h-full bg-gray-300'
-//     >
-//         <div>
-//         <Header/>
-//         <Routes>
-//              <Route path='/search' element={<MainWindow/>}/>
-//              <Route path='/favorites' element={<Favorites/>}/>
-//              <Route exact path='/' element={<LandingPage/>}/>
-
-//         </Routes>
-//         <Footer/>
-//         </div>
-
-//     </div>
-//     </BrowserRouter>
-//   )
-// }
-
-// export default App

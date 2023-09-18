@@ -58,26 +58,15 @@ function Header() {
   };
 
   return (
-    <div
-      className=" border-black bg-black sm:text-center" //barra completa
-    >
-      <div
-        className="flex flex-row flex-grow w-auto sm:w-5/7 mx-auto" //barra 5/7 espacio principal de contenido
-        // className="w-5/7  mx-auto" //barra 5/7 espacio principal de contenido
-      >
-
-
-
-
-
+    <div className=" border-black bg-black sm:text-center">
+      <div className="flex flex-row flex-grow w-auto sm:w-5/7 mx-auto">
         <div
           className="flex flex-row flex-wrap h-auto mt-1 mb-1  sm:flex-row w-full justify-between " //barra 2/3 de 5/7 para poner logo y searcher
-        //   className="flex flex-row w-full" //barra 2/3 de 5/7 para poner logo y searcher
         >
-
-
-          <img src={oldCam} className="w-auto h-7 sm:w-auto sm:mr-4 rounded-md"></img>
-          {/* <img src={oldCam} className="h-7 mr-5 border-none rounded-md"></img> */}
+          <img
+            src={oldCam}
+            className="w-auto h-7 sm:w-auto sm:mr-4 rounded-md"
+          ></img>
 
           {!seeSearchBTN && (
             <Link
@@ -89,8 +78,6 @@ function Header() {
             </Link>
           )}
 
-
-
           {seeSearchBTN && (
             <Link
               to="/favorites"
@@ -101,18 +88,10 @@ function Header() {
             </Link>
           )}
 
-
-
-
-
-
-          {/* hago este 1a   modificado 2da*/}
           {seeSearchBTN && (
             <div
               className="w-full mt-1 flex flex-row h-6 sm:h-auto sm:w-4/6 rounded-md sm:rounded-lg sm:mt-0 sm-border bg-gray-200" //contenedor dividido en 6 del searcher
             >
-
-
               <p className="flex flex-col w-1/6 h-auto justify-center text-center font-bold text-xs border-r-4   ">
                 MOVIE
               </p>
@@ -135,20 +114,9 @@ function Header() {
                   <FaMagnifyingGlass className="mx-auto" />
                 </Link>
               </div>
-
             </div>
           )}
 
-
-
-
-
-
-
-
-
-
-          {/* //este estoy haciendo  	1o              modificado 2do */ }
           {!seeSearchBTN && favOrderBy == "" && favOrderType == "" && (
             <div
               className="flex flex-row mt-1 w-full h-6 sm:h-auto sm:w-4/6 rounded-md sm:rounded-lg sm:border sm:mt-0  bg-gray-200 " //contenedor dividido en 6 del searcher
@@ -191,10 +159,6 @@ function Header() {
             </div>
           )}
 
-
-
-
-            {/* este se hace segundo  modificado 2*/}
           {!seeSearchBTN && favOrderBy !== "" && favOrderType !== "" && (
             <div
               className="flex flex-row rounded-md w-full h-6 mt-1 sm:h-auto sm:mt-0 sm:w-4/6 sm:border sm:rounded-lg  bg-gray-200" //contenedor dividido en 6 del searcher
@@ -223,12 +187,6 @@ function Header() {
             </div>
           )}
 
-
-
-
-
-
-            {/* Se hace tercero  modificado 2da*/}
           {!seeSearchBTN && favOrderBy == "" && favOrderType !== "" && (
             <div
               className="flex flex-row h-6 mt-1 w-full sm:h-auto sm:w-4/6 sm:mt-0 rounded-md sm:border sm:rounded-lg bg-gray-200" //contenedor dividido en 6 del searcher
@@ -264,22 +222,11 @@ function Header() {
             </div>
           )}
 
-
-
-
-
-
-
-
-
-
-
-            {/* se hizo cuarto     modificado 2*/}
           {!seeSearchBTN && favOrderBy !== "" && favOrderType == "" && (
             <div
               className="flex flex-row h-6 mt-1 w-full sm:h-auto sm:w-4/6 sm:mt-0 rounded-md sm:border sm:rounded-lg bg-gray-200 " //contenedor dividido en 6 del searcher
             >
-               <p className="flex flex-col w-1/6 h-auto justify-center text-center font-bold text-xs border-r-4">
+              <p className="flex flex-col w-1/6 h-auto justify-center text-center font-bold text-xs border-r-4">
                 SORT
               </p>
               <select
@@ -316,32 +263,6 @@ function Header() {
 }
 
 export default Header;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import { useState } from "react";
 // import { FaMagnifyingGlass } from "react-icons/fa6";
