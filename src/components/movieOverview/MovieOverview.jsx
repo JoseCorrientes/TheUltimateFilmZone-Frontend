@@ -142,9 +142,7 @@ function MovieOverview() {
 
   return (
     <div className="w-full h-auto ">
-      {/* <div className=" w-full min-h-screen h-auto m-auto"> */}
       <div className="rounded-xl flex flex-row w-auto sm:w-4/6 bg-white mt-5 mb-5 mx-1 sm:mx-auto shadow-black shadow-lg">
-       
         <div className="ml-1 sm:ml-2 w-2/6 h-auto">
           {urlImage != null && (
             <img
@@ -188,8 +186,6 @@ function MovieOverview() {
               actualMovie[0] !== "" &&
               actualMovie[0].release_date.slice(0, 4)}
           </h2>
-
-
 
           <h2 className="flex flex-row flex-wrap justify-left mt-4 mb-4">
             {categoriesName != [] &&
@@ -235,11 +231,6 @@ function MovieOverview() {
             <span>{processedCastArray}</span>
           </div>
 
-
-
-
-
-
           <div className="mt-10 mb-10 w-full flex flex-row flex-wrap">
             {trailerArray.map((item) => (
               <div
@@ -259,8 +250,7 @@ function MovieOverview() {
       </div>
 
       {modalOn && (
-        <Modal 
-        >
+        <Modal>
           <ModalEmail
             setModalOn={setModalOn}
             actualMovie={actualMovie}
@@ -270,8 +260,7 @@ function MovieOverview() {
       )}
 
       {emailError == "Error" && (
-        <Modal 
-        >
+        <Modal>
           <div className="flex flex-row w-full h-screen bg-opacity-50 fixed top-0 left-0  bg-black justify-center items-center">
             {" "}
             <div className="flex flex-row flex-wrap rounded-2xl w-1/3 h-auto bg-white bg-opacity-60 shadow-xl shadow-black justify-center">
@@ -294,4 +283,3 @@ function MovieOverview() {
 }
 
 export default MovieOverview;
-
